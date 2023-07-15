@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net7.0-windows</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<UseWindowsForms>true</UseWindowsForms>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <Compile Remove="b\**" />
+	  <EmbeddedResource Remove="b\**" />
+	  <None Remove="b\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="PKHeX.Core" Version="23.7.9" />
+	</ItemGroup>
+
+</Project>
